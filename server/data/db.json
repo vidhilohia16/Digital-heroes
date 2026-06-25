@@ -1,0 +1,170 @@
+{
+  "charities": [
+    {
+      "id": "charity-1",
+      "name": "Green Fairways Initiative",
+      "description": "Providing urban youth access to golf equipment, mentorship, and life-skills education through golf.",
+      "logo_url": "https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=200",
+      "banner_url": "https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&q=80&w=800",
+      "upcoming_events": "Youth Golf Clinic - July 12th; Charity Scramble - August 5th",
+      "is_featured": true
+    },
+    {
+      "id": "charity-2",
+      "name": "Hearts & Handicaps",
+      "description": "Supporting golf tournaments for physically challenged and veteran adaptive golf programs.",
+      "logo_url": "https://images.unsplash.com/photo-1469571486090-7db333894b2a?auto=format&fit=crop&q=80&w=200",
+      "banner_url": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=800",
+      "upcoming_events": "Veterans Golf Open - July 20th; Adaptive Equipment Clinic - Sept 3rd",
+      "is_featured": false
+    },
+    {
+      "id": "charity-3",
+      "name": "Eco-Links Foundation",
+      "description": "Partnering with golf courses globally to restore natural wildlife habitats and implement eco-friendly water management.",
+      "logo_url": "https://images.unsplash.com/photo-1535083783855-76ae62b2914e?auto=format&fit=crop&q=80&w=200",
+      "banner_url": "https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&q=80&w=800",
+      "upcoming_events": "Sustainable Turf Workshop - August 15th",
+      "is_featured": false
+    }
+  ],
+  "profiles": [
+    {
+      "id": "admin-id",
+      "email": "admin@digitalheroes.com",
+      "full_name": "Admin Hero",
+      "role": "admin",
+      "subscription_status": "active",
+      "subscription_plan": "yearly",
+      "charity_id": "charity-1",
+      "donation_percentage": 15,
+      "total_winnings": 0,
+      "payment_status": "none"
+    },
+    {
+      "id": "user-id-1",
+      "email": "golfer1@gmail.com",
+      "full_name": "Sarah Connor",
+      "role": "subscriber",
+      "subscription_status": "active",
+      "subscription_plan": "monthly",
+      "charity_id": "charity-1",
+      "donation_percentage": 12,
+      "total_winnings": 150,
+      "payment_status": "paid"
+    },
+    {
+      "id": "user-id-2",
+      "email": "golfer2@gmail.com",
+      "full_name": "Marcus Aurelius",
+      "role": "subscriber",
+      "subscription_status": "active",
+      "subscription_plan": "yearly",
+      "charity_id": "charity-2",
+      "donation_percentage": 20,
+      "total_winnings": 0,
+      "payment_status": "none"
+    },
+    {
+      "role": "subscriber",
+      "subscription_status": "active",
+      "donation_percentage": 10,
+      "total_winnings": 0,
+      "payment_status": "none",
+      "id": "mock-user-1782422744988",
+      "email": "vidhilohia8c@gmail.com",
+      "full_name": "VIDHI LOHIA",
+      "subscription_plan": "monthly",
+      "charity_id": "charity-1"
+    }
+  ],
+  "golf_scores": [
+    {
+      "id": "s1",
+      "user_id": "user-id-1",
+      "score": 38,
+      "score_date": "2026-06-25"
+    },
+    {
+      "id": "s2",
+      "user_id": "user-id-1",
+      "score": 40,
+      "score_date": "2026-06-20"
+    },
+    {
+      "id": "s3",
+      "user_id": "user-id-1",
+      "score": 36,
+      "score_date": "2026-06-15"
+    },
+    {
+      "id": "s4",
+      "user_id": "user-id-1",
+      "score": 42,
+      "score_date": "2026-06-10"
+    },
+    {
+      "id": "s5",
+      "user_id": "user-id-1",
+      "score": 35,
+      "score_date": "2026-06-05"
+    },
+    {
+      "id": "s6",
+      "user_id": "user-id-2",
+      "score": 39,
+      "score_date": "2026-06-24"
+    },
+    {
+      "id": "s7",
+      "user_id": "user-id-2",
+      "score": 44,
+      "score_date": "2026-06-19"
+    },
+    {
+      "id": "s8",
+      "user_id": "user-id-2",
+      "score": 41,
+      "score_date": "2026-06-14"
+    },
+    {
+      "id": "s9",
+      "user_id": "user-id-2",
+      "score": 37,
+      "score_date": "2026-06-09"
+    }
+  ],
+  "draws": [
+    {
+      "id": "draw-1",
+      "draw_date": "2026-05-31",
+      "winning_numbers": [
+        12,
+        19,
+        27,
+        35,
+        41
+      ],
+      "logic_used": "random",
+      "total_subscribers": 2,
+      "total_pool": 250,
+      "jackpot_rolled_over": 0
+    }
+  ],
+  "winners": [
+    {
+      "id": "winner-1",
+      "draw_id": "draw-1",
+      "user_id": "user-id-1",
+      "match_type": 4,
+      "prize_amount": 150,
+      "proof_image_url": "https://images.unsplash.com/photo-1593113630400-ea4288922497?auto=format&fit=crop&q=80&w=600",
+      "verification_status": "approved",
+      "payment_status": "completed",
+      "verified_at": "2026-06-01T10:00:00.000Z"
+    }
+  ],
+  "settings": {
+    "jackpot_pool": 250
+  }
+}
