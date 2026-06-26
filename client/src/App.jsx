@@ -9,7 +9,7 @@ import Auth from './pages/Auth';
 
 export const AuthContext = createContext(null);
 
-export const BACKEND_URL = 'http://localhost:5000';
+export const BACKEND_URL = import.meta.env.VITE_API_URL;
 
 function AppContent() {
   const { user, logout } = useContext(AuthContext);
@@ -125,7 +125,7 @@ function AppContent() {
           )}
 
           {/* Mobile Menu Icon */}
-          <button 
+          <button
             onClick={() => setMenuOpen(!menuOpen)}
             style={{
               background: 'none',
@@ -268,7 +268,7 @@ export default function App() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
     });
-    
+
     if (!res.ok) {
       const err = await res.json();
       throw new Error(err.error || 'Failed to login');
