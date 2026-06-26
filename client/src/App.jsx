@@ -42,23 +42,26 @@ function AppContent() {
         boxShadow: '0 8px 32px 0 rgba(46, 125, 50, 0.05)'
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }} onClick={() => navigate('/')}>
-          <div style={{
-            background: 'var(--color-charity-gradient)',
-            width: '40px',
-            height: '40px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            boxShadow: '0 4px 15px rgba(255, 51, 102, 0.4)'
-          }}>
-            <Heart size={20} color="#fff" fill="#fff" />
+          <div 
+            className="logo-icon-wrapper"
+            style={{
+              background: 'var(--color-charity-gradient)',
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 4px 15px rgba(255, 51, 102, 0.4)'
+            }}
+          >
+            <Heart size={20} color="#fff" fill="#fff" className="logo-heart-svg" />
           </div>
           <div>
             <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.25rem', letterSpacing: '-0.02em' }}>
               DIGITAL<span className="gradient-text-reward">HEROES</span>
             </span>
-            <div style={{ fontSize: '0.65rem', color: 'var(--text-muted)', letterSpacing: '0.1em', marginTop: '-2px', textTransform: 'uppercase' }}>
+            <div className="logo-subtext" style={{ fontSize: '0.65rem', color: 'var(--text-muted)', letterSpacing: '0.1em', marginTop: '-2px', textTransform: 'uppercase' }}>
               Charity & Rewards
             </div>
           </div>
@@ -120,7 +123,7 @@ function AppContent() {
             </div>
           ) : (
             <Link to="/auth" className="btn-primary" style={{ padding: '8px 20px', fontSize: '0.85rem' }}>
-              <LogIn size={16} /> Support a Charity
+              <LogIn size={16} /> Support<span className="hide-mobile"> a Charity</span>
             </Link>
           )}
 
@@ -212,10 +215,36 @@ function AppContent() {
         @media (max-width: 600px) {
           header.glass-panel {
             margin: 10px 10px 0 10px !important;
-            padding: 10px 16px !important;
+            padding: 10px 12px !important;
           }
           header span {
-            font-size: 1.1rem !important;
+            font-size: 0.95rem !important;
+          }
+          .logo-icon-wrapper {
+            width: 32px !important;
+            height: 32px !important;
+            box-shadow: 0 2px 8px rgba(255, 51, 102, 0.25) !important;
+          }
+          .logo-heart-svg {
+            width: 14px !important;
+            height: 14px !important;
+          }
+          .logo-subtext {
+            font-size: 0.55rem !important;
+            letter-spacing: 0.05em !important;
+          }
+          header .btn-primary, header .btn-secondary {
+            padding: 6px 12px !important;
+            font-size: 0.75rem !important;
+            white-space: nowrap !important;
+            gap: 4px !important;
+          }
+          header .btn-primary svg, header .btn-secondary svg {
+            width: 14px !important;
+            height: 14px !important;
+          }
+          .hide-mobile {
+            display: none !important;
           }
         }
       `}</style>
