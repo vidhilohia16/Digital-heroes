@@ -9,7 +9,7 @@ import Auth from './pages/Auth';
 
 export const AuthContext = createContext(null);
 
-export const BACKEND_URL = import.meta.env.VITE_API_URL;
+export const BACKEND_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
 function AppContent() {
   const { user, logout } = useContext(AuthContext);

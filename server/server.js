@@ -48,3 +48,5 @@ app.listen(PORT, () => {
   console.log(`🚀 Digital Heroes server running on port ${PORT}`);
   console.log(`📂 Proof uploads path: ${path.join(__dirname, 'uploads')}`);
 });
+
+module.exports = app;
